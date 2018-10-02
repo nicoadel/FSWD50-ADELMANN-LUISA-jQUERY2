@@ -1,0 +1,21 @@
+body .shop {
+  display: flex;
+  flex-direction: row; }
+  body .shop .item {
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column; }
+    body .shop .item .item_name {
+      padding-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-item: center; }
+    body .shop .item .item_price {
+      padding-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-item: center; }
+
+/*# sourceMappingURL=shopping.css.map */
