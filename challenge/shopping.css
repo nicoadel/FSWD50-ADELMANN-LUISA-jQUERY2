@@ -1,21 +1,49 @@
-body .shop {
+body .container {
   display: flex;
-  flex-direction: row; }
-  body .shop .item {
-    border: 1px solid black;
-    width: 300px;
-    height: 300px;
+  flex-direction: column; }
+  body .container #shop {
+    display: flex; }
+    body .container #shop .item_shopping {
+      margin: 20px; }
+  body .container #cart .item {
     display: flex;
-    flex-direction: column; }
-    body .shop .item .item_name {
-      padding-top: 20px;
+    flex-direction: row;
+    border: 1px solid black; }
+    body .container #cart .item img {
+      width: 200px;
+      height: 100px; }
+    body .container #cart .item .add_delete {
       display: flex;
-      justify-content: center;
-      align-item: center; }
-    body .shop .item .item_price {
-      padding-top: 20px;
+      justify-content: space-around;
+      align-items: center;
+      width: 100px; }
+      body .container #cart .item .add_delete img {
+        width: 10px;
+        height: 10px; }
+    body .container #cart .item .item_description {
+      padding-left: 50px;
+      height: auto;
       display: flex;
-      justify-content: center;
-      align-item: center; }
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around; }
+    body .container #cart .item .quantity {
+      width: 100px;
+      justify-content: space-around;
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      body .container #cart .item .quantity button {
+        height: 30px; }
+        body .container #cart .item .quantity button img {
+          width: 10px;
+          height: 10px; }
+      body .container #cart .item .quantity input {
+        width: 20px; }
+    body .container #cart .item .price {
+      display: flex;
+      width: 50%;
+      justify-content: flex-end;
+      align-items: center; }
 
 /*# sourceMappingURL=shopping.css.map */

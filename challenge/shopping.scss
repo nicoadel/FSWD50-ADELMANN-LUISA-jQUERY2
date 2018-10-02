@@ -1,36 +1,77 @@
 body {
-
-    .shop {
+    .container {
         display: flex;
-        flex-direction: row;
-
-        .item {
-            border: 1px solid black;
-            width: 300px;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-
-            .item_name {
-            	padding-top:20px;
-                display: flex;
-                justify-content: center;
-                align-item: center;
-            }
-
-            .item_price {
-            	padding-top:20px;
-                display: flex;
-                justify-content: center;
-                align-item: center;
-            }
+        flex-direction: column;
+        #shop{
+            display:flex;
+            .item_shopping{
+                margin:20px;
+            }   
 
         }
+        #cart {
+            .item {
+                display: flex;
+                flex-direction: row;
+                border: 1px solid black;
 
+                img {
+                    width: 200px;
+                    height: 100px;
+                }
 
+                .add_delete {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 100px;
+
+                    img {
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+
+                .item_description {
+                    padding-left: 50px;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                }
+
+                .quantity {
+                    width: 100px;
+                    justify-content: space-around;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    button {
+                        height: 30px;
+
+                        img {
+                            width: 10px;
+                            height: 10px;
+                        }
+                    }
+
+                    input {
+                        width: 20px;
+                    }
+                }
+
+                .price {
+                    display: flex;
+                    width: 50%;
+                    justify-content: flex-end;
+                    align-items: center;
+
+                }
+            }
+        }
 
     }
-
-
 
 }
